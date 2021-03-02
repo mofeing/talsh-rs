@@ -1,0 +1,7 @@
+[package]
+name = "talsh-sys"
+version = "0.1.0"
+authors = ["Sergio Sanchez Ramirez <sergio.sanchez.ramirez@bsc.es>"]
+edition = "2018"
+
+[dependencies]
