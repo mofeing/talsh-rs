@@ -2,8 +2,6 @@ use std::os::raw::*;
 
 const MAX_TENSOR_RANK: usize = 32;
 const MAX_TENSOR_OPERANDS: usize = 4;
-const MAX_CONTRACTION_PATTERN_LEN: usize = 1024;
-const MAX_MLNDS_PER_TENS: usize = 4;
 
 /// Tensor signature.
 #[repr(C)]
