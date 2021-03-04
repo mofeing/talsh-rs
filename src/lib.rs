@@ -1,5 +1,7 @@
 use num_derive::FromPrimitive;
-use talsh_sys::*;
+
+mod control;
+pub use control::*;
 
 #[derive(FromPrimitive)]
 pub enum ErrorCode {
@@ -22,7 +24,7 @@ pub enum ErrorCode {
 }
 
 #[derive(FromPrimitive)]
-enum TaskStatus {
+pub enum TaskStatus {
     Error = 1999999,
     Empty = 2000000,
     Scheduled = 2000001,
@@ -33,7 +35,7 @@ enum TaskStatus {
 }
 
 #[derive(FromPrimitive)]
-enum OperationKinds {
+pub enum OperationKinds {
     Noop,
     Init = 68,
     Norm1 = 69,
@@ -55,7 +57,7 @@ enum OperationKinds {
 }
 
 #[derive(FromPrimitive)]
-enum OperationStage {
+pub enum OperationStage {
     Undefined = -1,
     Empty = 0,
     Partial = 1,
