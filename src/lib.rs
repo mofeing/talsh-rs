@@ -2,7 +2,7 @@ use num_derive::FromPrimitive;
 use talsh_sys::*;
 
 #[derive(FromPrimitive)]
-enum ErrorCode {
+pub enum ErrorCode {
     Success = 0,
     Failure = -666,
     NotAvailable = -888,
